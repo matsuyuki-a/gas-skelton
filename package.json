@@ -1,0 +1,25 @@
+{
+  "name": "gas-skelton",
+  "version": "1.0.0",
+  "description": "Google Apps Script Skelton Code",
+  "main": "lib/index.js",
+  "scripts": {
+    "create": "npm run destroy && clasp login && clasp create && jq '.rootDir = \"./lib\"' .clasp.json > .clasp2.json && shx mv .clasp2.json .clasp.json",
+    "destroy": "shx rm -f .clasp.json && clasp logout",
+    "start": "npm run build && clasp push && clasp open",
+    "build": "shx mkdir -p lib && tsc && npm run copy",
+    "copy": "shx cp appsscript.json lib",
+    "clean": "shx rm -rf lib",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "@rmn_e",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "@google/clasp": "^1.1.5",
+    "@types/google-apps-script": "0.0.21",
+    "node-jq": "^1.2.0",
+    "shelljs": "^0.8.1",
+    "shx": "^0.2.2",
+    "typescript": "^2.7.2"
+  }
+}
