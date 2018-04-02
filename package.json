@@ -4,7 +4,7 @@
   "description": "Google Apps Script Skelton Code",
   "main": "lib/index.js",
   "scripts": {
-    "create": "npm run destroy && clasp login && clasp create && jq '.rootDir = \"./lib\"' .clasp.json > .clasp2.json && shx mv .clasp2.json .clasp.json",
+    "create": "npm run destroy && clasp login && clasp create && jq '.rootDir = \"lib\"' .clasp.json > .clasp2.json && shx mv .clasp2.json .clasp.json",
     "destroy": "shx rm -f .clasp.json && clasp logout",
     "start": "npm run build && clasp push && clasp open",
     "build": "shx mkdir -p lib && tsc && npm run copy",
