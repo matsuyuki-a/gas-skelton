@@ -16,5 +16,22 @@ gas-skelton
 - (※2): スクリプトエディタで開いた時のURIの `https://script.google.com/d/【スクリプトID】/edit` の `【スクリプトID】` の部分(長い英数文字列)が書くべきスクリプトIDです.
 
 
+## ディレクトリ構成
+```
+.
+├── .clasp.default.json - .clasp.json の設定例です. .clasp.json にコピーしてご利用ください.
+├── .clasp.json - 【初期状態では無い】プロジェクトのアップロード先や, どのディレクトリをアップロードするか(初期状態でlib)を指定できます.
+├── .gitignore - git が無視するファイル群が指定されています. 基本触らなくてOK. 
+├── README.md - このファイルです.
+├── appsscript.json - マニフェストファイル. アップロード時に lib 下にコピーされます.
+├── lib - 【初期状態では無い】アップロードされるファイル群が入る(予定)のディレクトリ. TypeScript からコンパイルされたJavaScriptソースと appsscript.json が入ります. npm start で生成されます.
+├── node_modules  - 【初期状態では無い】 node が利用するライブラリ群です. npm install で生成されます.
+├── package-lock.json - node の依存ライブラリの細かいバージョンなどが指定されています. npm install などを新たに行うと自動的に書き換えられます. 基本触らなくてOK.
+├── package.json - node のパッケージファイルです. 使用するライブラリのバージョンなどが記述されています.
+├── src - TypeScriptソースを置くディレクトリです.
+└── tsconfig.json - TypeScriptのコンパイル設定です.
+
+```
+
 ## ライセンス
 [CC0](https://creativecommons.org/publicdomain/zero/1.0/deed.ja)
