@@ -13,10 +13,10 @@
   "author": "@rmn_e",
   "license": "CC0-1.0",
   "devDependencies": {
-    "@google/clasp": "^1.1.5",
+    "@google/clasp": "^2.2.1",
     "@types/google-apps-script": "0.0.54",
     "node-jq": "^1.9.0",
-    "shelljs": "^0.8.1",
+    "shelljs": "^0.8.3",
     "shx": "^0.3.2",
     "typescript": "^2.7.2"
   }
