@@ -1,7 +1,14 @@
 gas-skelton
 ============
 
-[Google Apps Script](https://script.google.com/home) を TypeScript で書くためのスケルトンコードです. [clasp](https://github.com/google/clasp) 使用.
+[Google Apps Script](https://script.google.com/home) を TypeScript で書くためのスケルトンコードです.
+
+## 注意
+[clasp](https://github.com/google/clasp) をグローバルインストールしてください。
+
+``` sh
+$ npm i -g clasp
+```
 
 ## 使用方法
 1. スプレッドシートやドキュメントなどからスクリプトエディタを開く. あるいは, スタンドアロンのプロジェクトを作る.

@@ -3,8 +3,6 @@
     "rootDir": "./src",
     "outDir": "./lib",
     "target": "es5",
-    "module": "umd",
-    "moduleResolution": "node",
     "lib": [
         "es2017",
         "es2016",
