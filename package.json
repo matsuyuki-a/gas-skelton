@@ -16,6 +16,6 @@
     "@types/google-apps-script": "0.0.62",
     "shelljs": "^0.8.4",
     "shx": "^0.3.2",
-    "typescript": "^3.6.4"
+    "typescript": "^3.9.2"
   }
 }
