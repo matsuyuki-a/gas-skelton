@@ -13,7 +13,7 @@
   "author": "@rmn_e",
   "license": "CC0-1.0",
   "devDependencies": {
-    "@types/google-apps-script": "0.0.62",
+    "@types/google-apps-script": "1.0.36",
     "shelljs": "^0.8.4",
     "shx": "^0.3.2",
     "typescript": "^3.9.3"
